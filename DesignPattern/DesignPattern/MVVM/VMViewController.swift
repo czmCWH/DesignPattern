@@ -4,6 +4,19 @@
 //
 //  Created by czm on 2021/10/18.
 //
+// https://github.com/pro648/tips/blob/master/sources/MVVM设计模式.md
+// https://www.objc.io/issues/13-architecture/mvvm/
+// iOS 上 MVVM 背后的动机是它降低了一个 controller 的复杂性，并使一个人的表现逻辑更容易测试。
+// 当模型需要转换后才可以在视图显示时，使用 MVVM。
+
+/*
+ 
+ Controller：处理 viewDidLoad；View生命周期事件；通过 IBAction 和其它任务处理 View 回调。
+ 
+ View：在屏幕上显示视觉元素和控件，通常为UIView的子类。
+ 
+ */
+
 
 import UIKit
 

@@ -6,13 +6,15 @@
 //
 /*
  
+ View Model：将 Model 转换为可在 View 上直接显示的值。通常为 class，为了方便传递时引用。
+ 
  处理展示的业务逻辑，包括按钮的点击，数据的请求和解析等等。
  
  */
 
 import UIKit
 
-class ViewModel: NSObject {
+class ViewModel {
     
     /// 与 视图模型 关联的VC
     weak var controller: VMViewController?
@@ -22,7 +24,6 @@ class ViewModel: NSObject {
     
     init(controller: VMViewController) {
         self.controller = controller
-        super.init()           
     }
     
     func httpRequest() {
